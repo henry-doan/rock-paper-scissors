@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="description" content="Demo project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css"></link>
+	</head>
+	<body>
+		<h1 class="cen">Rock, Paper, or Scissors?</h1>
+		<div class="btn-group btn-group-justified" role="group" >
+			<div class="btn-group" role="group">
+		    <button type="button" class="btn btn-default" onClick="userInput('rock');">Rock</button>
+		  </div>
+		  <div class="btn-group" role="group">
+		    <button type="button" class="btn btn-default" onClick="userInput('paper');">Paper</button>
+		  </div>
+		  <div class="btn-group" role="group">
+		    <button type="button" class="btn btn-default" onClick="userInput('scissors');">Scissors</button>
+		  </div>
+		</div>
+		<footer>
+			<div class="jumbotron">
+					<h1 id="userI" class="cen"></h1>
+					<h1 id="computer" class="cen"></h1>
+					<h1 id="display" class="cen"></h1>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src='app.js'></script>
+</html>
