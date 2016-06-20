@@ -1,8 +1,8 @@
-var playerOp = "";
-var comOp = "";
-var reults = "";
+let playerOp = "";
+let comOp = "";
+const results = "";
 
-function userInput(x) {
+const userInput = (x) => {
 	playerOp = x;
 	comInput();
 	compare(playerOp, comOp);
@@ -11,8 +11,8 @@ function userInput(x) {
 	views();
 }
 
-function comInput() {
-	var comPlyOp = Math.random();
+const comInput = () => {
+	const comPlyOp = Math.random();
 
 	if (comPlyOp <= 0.34){
 		comOp = "rock";
@@ -23,7 +23,7 @@ function comInput() {
 	}
 }
 
-function compare(first_op, second_op){
+const compare = (first_op, second_op) => {
 	if (first_op === second_op){
 		results = "Its a Tie!";
 	}
@@ -53,16 +53,16 @@ function compare(first_op, second_op){
 
 }
 
-function userChoice(){
-	var userI = document.getElementById('userI');
-	userI.innerHTML = "You Chose:"+ " " + playerOp;
+const userChoice = () => {
+	const userI = document.getElementById('userI');
+	userI.innerHTML = `You Chose: ${playerOp}`;
 }
-function computerChoice(){
-	var computer = document.getElementById('computer');
-	computer.innerHTML = "Computer Chose:"+ " " + comOp;
+const computerChoice = () => {
+	const computer = document.getElementById('computer');
+	computer.innerHTML = `Computer Chose: ${comOp}`;
 }
 
-function views(){
-	var display = document.getElementById('display');
+const views = () => {
+	const display = document.getElementById('display');
 	display.innerHTML = results;
 }
